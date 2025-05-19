@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  background-color: #111;
+}
+/* src/App.css */
+.app {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+/* .main-content {
+  padding-top: 80px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
+} */
+
+/* main h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 100px 50px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 50px; 
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+} */

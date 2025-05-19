@@ -1,0 +1,11 @@
+/* src/Components/Rows/RowList/rowList.css */
+.row-list {
+    background-color: #141414; /* Netflix dark theme */
+    padding: 1rem 0;
+    min-height: 100vh; /* Ensure full height */
+  }
+  
+  /* Ensure rows are spaced nicely */
+  .row-list > .row {
+    margin-bottom: 2rem;
+  }

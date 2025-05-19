@@ -1,0 +1,177 @@
+/* src/Components/sharedPages/Header/Header.css */
+.header-outer-container {
+  background-color: transparent; /* Fully transparent background */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: transparent; /* Ensure no background */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Ensure no background */
+}
+
+.logo {
+  width: 92px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Desktop navigation */
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; /* Ensure no background */
+}
+
+.nav-links ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.nav-links ul li a {
+  color: #e5e5e5; /* Keep text visible */
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #e50914;
+  font-weight: 500;
+}
+
+.nav-links ul li a.active {
+  color: #e50914;
+  font-weight: 500;
+}
+
+/* Right-side icons */
+.header-right ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; /* Ensure no background */
+}
+
+.header-right ul li {
+  color: #e5e5e5; /* Keep icons visible */
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-right ul li:hover {
+  color: #e50914;
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  color: #e5e5e5; /* Keep icon visible */
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+  background-color: transparent; /* Ensure no background */
+}
+
+.mobile-menu-icon:hover {
+  color: #e50914;
+}
+
+/* Mobile dropdown menu */
+.mobile-nav-dropdown {
+  background-color: transparent; /* Fully transparent for mobile menu */
+  position: absolute;
+  top: 45px;/* Adjust based on header height */
+  left:0;
+  width:50%;
+  padding: 10px 20px;
+}
+
+.mobile-nav-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: black
+}
+
+.mobile-nav-dropdown ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.mobile-nav-dropdown ul li a {
+  color: #e5e5e5; /* Keep text visible */
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-dropdown ul li a:hover,
+.mobile-nav-dropdown ul li a.active {
+  color: #e50914;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .header-right ul {
+    display: flex;
+  }
+
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .logo {
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  .nav-links ul li a:hover,
+  .mobile-nav-dropdown ul li a:hover,
+  .header-right ul li:hover,
+  .mobile-menu-icon:hover {
+    color: #e5e5e5; /* No hover effect on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-nav-dropdown {
+    display: none;
+  }
+}
+
+
+
+
+
+
+

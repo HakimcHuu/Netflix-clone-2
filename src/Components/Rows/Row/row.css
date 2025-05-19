@@ -1,0 +1,88 @@
+.row {
+  margin: 1.5rem 1rem;
+  color: #ffffff;
+}
+
+.row h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+.row__container {
+  position: relative;
+}
+
+.row__posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.row__movieCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 180px;
+}
+
+.row__poster {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.row__posterLarge {
+  height: 250px;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__movieTitle {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ccc;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.row__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  border-radius: 0.5rem;
+}
+
+.row__arrow--left {
+  left: 0;
+}
+
+.row__arrow--right {
+  right: 0;
+}

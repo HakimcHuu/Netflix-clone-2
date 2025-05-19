@@ -1,0 +1,211 @@
+.mylist-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5rem 2rem 2rem; /* Increased padding-top for global navbar spacing */
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.mylist-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem; /* Space below header */
+  text-align: center;
+  color: #fff; /* White header text */
+}
+
+.mylist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.mylist-card {
+  position: relative;
+  background: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: calc(var(--index) * 0.1s);
+}
+
+.mylist-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.mylist-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.status-in-progress {
+  background: #ffd700;
+  color: #000;
+}
+
+.status-watched {
+  background: #00ff88;
+  color: #000;
+}
+
+.status-planned {
+  background: #ff5555;
+  color: #fff;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  color: #fff;
+}
+
+.genre {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.view-details {
+  background: #00ff88;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.view-details:hover {
+  background: #00cc66;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff5555;
+  margin: 2rem 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #2a2a2a;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  padding: 2rem;
+  position: relative;
+  color: #fff;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+  color: #00ff88;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.modal-description {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.modal-button {
+  display: inline-block;
+  background: #00ff88;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.modal-button:hover {
+  background: #00cc66;
+}
+
+.no-trailer {
+  color: #ff5555;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
